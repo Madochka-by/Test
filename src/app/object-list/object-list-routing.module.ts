@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ObjectListComponent } from './components/object-list.component';
+import { ObjectListComponent } from './component/list/object-list.component';
+import { ObjectItemComponent } from './item/object-item.component';
 
 const routes: Routes = [
   {
@@ -9,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: ':id',
-    component: ObjectListComponent,
+    component: ObjectItemComponent,
   },
 ];
 
@@ -17,4 +18,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class MyRoutingListModule {}
+export class ObjectListRouting {}
