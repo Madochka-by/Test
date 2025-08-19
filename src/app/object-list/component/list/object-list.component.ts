@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-object-list',
   templateUrl: './object-list.component.html',
   styleUrls: ['./object-list.component.scss'],
 })
-export class ObjectListComponent {
+export class MyObjectListComponent {
+  constructor(private router: Router, private route: ActivatedRoute) {}
+
   public myObjects = myObjects;
 
-  public redirectTo(id: number): void {}
+  public redirectTo(id: number): void {
+    this.router.navigate([`${id}`], { relativeTo: this.route });
+  }
 }
 
 export const myObjects: MyObject[] = [

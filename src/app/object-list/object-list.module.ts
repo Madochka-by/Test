@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { ObjectListComponent } from './component/list/object-list.component';
-import { ObjectItemComponent } from './item/object-item.component';
-import { ObjectListRouting } from './object-list-routing.module';
+
+import { ObjectItemComponent } from './component/item/object-item.component';
+import { MyObjectListComponent } from './component/list/object-list.component';
+import { CommonModule } from '@angular/common';
+import { MyObjectListRouting } from './object-list-routing.module';
 
 @NgModule({
-  imports: [BrowserModule, ObjectListRouting],
-  exports: [ObjectListComponent, ObjectItemComponent],
-  declarations: [ObjectListComponent, ObjectItemComponent, ObjectItemComponent],
+  imports: [CommonModule, MyObjectListRouting],
+  exports: [MyObjectListComponent, ObjectItemComponent],
+  declarations: [MyObjectListComponent, ObjectItemComponent],
   providers: [],
 })
-export class ObjectListModule {}
+export class MyObjectListModule {}

@@ -17,7 +17,7 @@ const routes: Routes = [
     path: 'object-list',
     loadChildren: () =>
       import('./object-list/object-list.module').then(
-        (m) => m.ObjectListModule
+        (m) => m.MyObjectListModule
       ),
   },
   {

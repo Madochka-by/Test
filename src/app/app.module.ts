@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
 import { MyCalculatorModule } from './my-calculator/my-calculator.module';
 import { EmptyRouteComponent } from './component/empty-route/empty-route.component';
-import { ObjectListComponent } from './object-list/component/list/object-list.component';
+import { MyObjectListModule } from './object-list/object-list.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavigationComponent,
-    EmptyRouteComponent,
-    ObjectListComponent,
+  declarations: [AppComponent, NavigationComponent, EmptyRouteComponent],
+  imports: [
+    CommonModule,
+    AppRoutingModule,
+    FormsModule,
+    MyCalculatorModule,
+    MyObjectListModule,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, MyCalculatorModule],
   providers: [],
   bootstrap: [AppComponent],
 })
