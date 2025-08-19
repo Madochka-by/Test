@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
 import { EmptyRouteComponent } from './component/empty-route/empty-route.component';
 import { ParentComponent } from './lifecycle/component/parent/parent.component';
+import { PostListComponent } from './requests/post-list/post-list.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'lifecycle',
     component: ParentComponent,
+  },
+  {
+    path: `request`,
+    component: PostListComponent,
   },
   {
     path: '',
