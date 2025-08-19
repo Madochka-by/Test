@@ -7,6 +7,7 @@ import { MyCalculatorModule } from './my-calculator/my-calculator.module';
 import { EmptyRouteComponent } from './component/empty-route/empty-route.component';
 import { MyObjectListModule } from './object-list/object-list.module';
 import { CommonModule } from '@angular/common';
+import { LifeCycleModule } from './lifecycle/life-cycle.module';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, EmptyRouteComponent],
@@ -16,6 +17,7 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     MyCalculatorModule,
     MyObjectListModule,
+    LifeCycleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
