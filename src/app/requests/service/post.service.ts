@@ -9,7 +9,9 @@ export interface Post {
   body: string;
 }
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class PostService {
   constructor(private _httpClient: HttpClient) {}
 

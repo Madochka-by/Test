@@ -1,1 +1,6 @@
-<p>post-list works!</p>
+<div *ngIf="posts$ | async as posts" class="frame">
+  <div *ngFor="let post of posts" class="post">
+    <span class="post__title">{{ post.title }}</span>
+    <span class="post__content">{{ post.body }}</span>
+  </div>
+</div>

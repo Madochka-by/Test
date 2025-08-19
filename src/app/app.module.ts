@@ -8,6 +8,7 @@ import { EmptyRouteComponent } from './component/empty-route/empty-route.compone
 import { MyObjectListModule } from './object-list/object-list.module';
 import { CommonModule } from '@angular/common';
 import { LifeCycleModule } from './lifecycle/life-cycle.module';
+import { RequestModule } from './requests/request.module';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, EmptyRouteComponent],
@@ -18,6 +19,7 @@ import { LifeCycleModule } from './lifecycle/life-cycle.module';
     MyCalculatorModule,
     MyObjectListModule,
     LifeCycleModule,
+    RequestModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
