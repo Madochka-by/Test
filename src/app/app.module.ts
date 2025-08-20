@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 import { LifeCycleModule } from './lifecycle/life-cycle.module';
 import { RequestModule } from './requests/request.module';
 
+import { DirectivesModule } from './directives/directives.module';
+
 @NgModule({
   declarations: [AppComponent, NavigationComponent, EmptyRouteComponent],
   imports: [
@@ -20,6 +22,7 @@ import { RequestModule } from './requests/request.module';
     MyObjectListModule,
     LifeCycleModule,
     RequestModule,
+    DirectivesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
