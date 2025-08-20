@@ -5,11 +5,16 @@ import { EmptyRouteComponent } from './component/empty-route/empty-route.compone
 import { ParentComponent } from './lifecycle/component/parent/parent.component';
 import { PostListComponent } from './requests/post-list/post-list.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesItemComponent } from './pipes/pipes-item/pipes-item.component';
 
 const routes: Routes = [
   {
     path: 'calculator',
     component: MyCalculatorComponent,
+  },
+  {
+    path: 'pipes',
+    component: PipesItemComponent,
   },
   {
     path: 'lifecycle',
