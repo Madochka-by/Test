@@ -1,0 +1,23 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 50vw;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__content {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+.frame {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

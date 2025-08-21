@@ -1,0 +1,11 @@
+<span>{{ name | uppercase | myCustomPipe }}</span>
+<br />
+<span>{{ surname | lowercase | myCustomPipe }}</span>
+<br />
+<span>{{ date | date }}</span>
+<br />
+<span>{{ date | date : "medium" }}</span>
+<br />
+<span>{{ date | date : "mm:ss" }}</span>
+<br />
+<span>{{ date | date : "MMM dd, yyyy 'в' hh:mm a" | uppercase }}</span>
