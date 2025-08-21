@@ -6,11 +6,16 @@ import { ParentComponent } from './lifecycle/component/parent/parent.component';
 import { PostListComponent } from './requests/post-list/post-list.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesItemComponent } from './pipes/pipes-item/pipes-item.component';
+import { ViewFooComponent } from './view-styles/component/view-foo/view-foo.component';
 
 const routes: Routes = [
   {
     path: 'calculator',
     component: MyCalculatorComponent,
+  },
+  {
+    path: 'styles',
+    component: ViewFooComponent,
   },
   {
     path: 'pipes',

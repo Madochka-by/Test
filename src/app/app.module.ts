@@ -11,6 +11,7 @@ import { LifeCycleModule } from './lifecycle/life-cycle.module';
 import { RequestModule } from './requests/request.module';
 import { DirectivesModule } from './directives/directives.module';
 import { PipesModule } from './pipes/pipes.module';
+import { ViewStylesModule } from './view-styles/view-styles.module';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, EmptyRouteComponent],
@@ -24,6 +25,7 @@ import { PipesModule } from './pipes/pipes.module';
     RequestModule,
     DirectivesModule,
     PipesModule,
+    ViewStylesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
